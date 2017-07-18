@@ -8,24 +8,17 @@
     tools:context="tech.hyperdev.scorekeeper.activities.MainActivity">
 
 
-    <fragment
-        android:id="@+id/team1"
-        android:name="tech.hyperdev.scorekeeper.fragments.ScoreFragment"
-        android:layout_width="340dp"
-        android:layout_height="200dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="69dp" />
+    <FrameLayout
+        android:id="@+id/containerOne"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
 
-    <fragment
-        android:id="@+id/team2"
-        android:name="tech.hyperdev.scorekeeper.fragments.ScoreFragment"
-        android:layout_width="340dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="32dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
+    <FrameLayout
+        android:id="@+id/containerTwo"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
 
 
 </RelativeLayout>
